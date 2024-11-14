@@ -1,0 +1,132 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --light-buttercream: #feedb6;
+  --crimson-red: #d50c0d;
+}
+
+.App .react-app-link {
+  text-decoration: none;
+}
+
+.App .btn-red {
+  color: white;
+  background-color: var(--crimson-red);
+  cursor: pointer;
+}
+
+.App .btn-red:hover{
+  background-color: black;
+}
+
+/* ------ */
+/* Menu */
+/* ----- */
+.Menu {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+
+.Menu .menu-nav {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+.Menu .menu-nav .logo {
+  margin-left: 30px;
+}
+
+.Menu .menu-nav ul {
+  margin-right: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+/* ------- */
+/* Home */
+/* ------- */
+.Home .hero {
+  width: 100%;
+  height: 100vh;
+  background: url('https://demo.hasthemes.com/aahar-preview/aahar/images/bg/7.jpg');
+  background-size: cover;
+}
+
+.Home .hero .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.Home .hero .container .hero-pizza {
+  width: 60%;
+  position: relative;
+  top: -200px;
+  left: -200px;
+}
+
+.Home .hero .container .hero-pizza img {
+  width: 100%;
+  animation: rotate 60s linear 0s infinite normal;
+}
+
+.Home .hero .container .hero-text-imgs {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+  /* right: -30px; */
+  top: 180px;
+}
+
+.Home .hero .hero-input {
+  width: 70%;
+  height: 150px;
+  background-color: white;
+  position: absolute;
+  right: 150px;
+  bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.Home .hero .hero-input input {
+  height: 60px;
+  border: none;
+  outline: none;
+  background-color: var(--light-buttercream);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.Home .hero .hero-input input:nth-child(1){
+  width: 45%;
+}
+
+.Home .hero .hero-input input:nth-child(2){
+  width: 30%;
+}
+
+.Home .hero .hero-input .btn-red{
+width: 100px;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+}
